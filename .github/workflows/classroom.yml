@@ -20,7 +20,7 @@ jobs:
       with:
         test-name: jmp1
         setup-command: sudo -H pip3 install -r requirements.txt
-        command: pytest -k abs
+        command: pytest -k jmp1
         timeout: 10
         max-score: 0
     - name: jmp2
@@ -29,7 +29,7 @@ jobs:
       with:
         test-name: jmp2
         setup-command: ''
-        command: pytest -k max
+        command: pytest -k jmp2
         timeout: 10
         max-score: 1
     - name: jmp3
@@ -38,7 +38,7 @@ jobs:
       with:
         test-name: jmp3
         setup-command: ''
-        command: pytest -k mult
+        command: pytest -k jmp3
         timeout: 10
         max-score: 1
     - name: Autograding Reporter
